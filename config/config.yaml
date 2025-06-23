@@ -1,0 +1,21 @@
+base_url: "https://practice.expandtesting.com"
+login_url: "https://practice.expandtesting.com/login"
+secure_area_url: "https://practice.expandtesting.com/secure"
+
+credentials:
+  valid:
+    username: "practice"
+    password: "SuperSecretPassword!"
+  invalid:
+    username: "invalid_user"
+    password: "invalid_password"
+
+browser:
+  default: "chrome"
+  headless: false
+  implicit_wait: 10
+  page_load_timeout: 30
+
+test_data:
+  expected_success_message: "Welcome to the Secure Area. When you are done click logout below."
+  expected_error_message: "Your username is invalid!"
